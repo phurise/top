@@ -1,5 +1,4 @@
 * {
-    border: 2px solid red;
     display: block;
 }
 
@@ -9,6 +8,6 @@ img {
     margin: 0 auto;
 }
 
-h1 {
+h1, h3 {
     text-align: center;
 }
