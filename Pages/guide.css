@@ -1,6 +1,8 @@
-* {
-    border: 2px solid red;
+body * {
     display: block;
+    padding: 3px;
+    /* border: 2px solid rgb(255, 130, 174); */
+    
 }
 
 img {
@@ -9,6 +11,6 @@ img {
     margin: 0 auto;
 }
 
-h1 {
+h1, h3 {
     text-align: center;
-}
+} 
