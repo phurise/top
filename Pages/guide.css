@@ -1,16 +1,65 @@
-body * {
-    display: block;
-    padding: 3px;
-    /* border: 2px solid rgb(255, 130, 174); */
-    
-}
-
 img {
-    height: auto;
-    width: 400px;
+    display: flex;
+    flex-basis: 100%;
+    max-width: 500px;
+    min-width: 20%;
+    width: 100%;
     margin: 0 auto;
+    border: 2px solid white;
 }
 
-h1, h3 {
+h1 {
     text-align: center;
-} 
+    font-family: pal2;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-left: 2%;
+    margin-right: 2%;
+    border-bottom: 1px solid white;
+}
+
+h4 {
+    max-width: fit-content;
+}
+
+* {
+    background-color: black;
+    color: white;
+    font-family: curlz;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid white;
+
+    background-color: rgb(27, 27, 27);
+}
+
+body * {
+    background-color: rgb(27, 27, 27);
+}
+
+p, h2, h3, h4, h5, h6 {
+    margin-left: 2%;
+}
+
+@font-face {
+    font-family: pal1;
+    src: url('../fonts/Palanquin-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: pal2;
+    src: url('../fonts/Palanquin-Regular.ttf');
+}
+
+@font-face {
+    font-family: curlz;
+    src: url('../fonts/CurlzMT.ttf');
+}
