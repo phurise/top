@@ -1,0 +1,69 @@
+/* Set default styles for all elements */
+* {
+    background-color: #2c2332;
+    color: #d5e1da;
+    font-family: pal2, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Set styles for body */
+body {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%; /* Add some margin on left and right */
+    border: 1px solid #d5e1da;
+    background-color: #3a3b52;
+    font-size: 14px;
+    
+}
+
+body * {
+    background-color: #3a3b52;
+}
+
+/* Set styles for bottom bar */
+.bottom_bar {
+    display: flex;
+    margin: 0 10%; /* Add some margin on left and right */
+    gap: 2%; /* Add some gap between child elements */
+    align-content: end;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Define custom fonts */
+@font-face {
+    font-family: pal1;
+    src: url('../fonts/Palanquin-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: pal2;
+    src: url('../fonts/Palanquin-Regular.ttf');
+}
+
+a {
+    text-decoration: none;
+}
+
+.character_pages {
+    font-size: 24px;
+    display: flex;
+    border-top: 1px solid #d5e1da;
+    border-bottom: 1px solid #d5e1da;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.top_bar {
+    display: flex;
+    margin: 0 5%; /* Add some margin on left and right */
+    gap: 2%; /* Add some gap between child elements */
+    align-content: start;
+    justify-content: center;
+    font-size: 12px;
+}
