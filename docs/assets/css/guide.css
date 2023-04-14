@@ -1,4 +1,11 @@
+<<<<<<< HEAD:Pages/guide.css
 /* Set styles for all images */
+=======
+* {
+    display: block;
+}
+
+>>>>>>> 56e493ba9332af3fcb88411ace64b4af8f516b53:docs/assets/css/guide.css
 img {
     display: flex;
     flex-basis: 100%; /* Set width to 100% of container */
@@ -9,8 +16,12 @@ img {
     border: 2px solid #d5e1da;
 }
 
+<<<<<<< HEAD:Pages/guide.css
 /* Set styles for main headings */
 h1 {
+=======
+h1, h3 {
+>>>>>>> 56e493ba9332af3fcb88411ace64b4af8f516b53:docs/assets/css/guide.css
     text-align: center;
     font-family: pal1;
     margin-bottom: 1%; /* Add some space below */
