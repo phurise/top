@@ -23,5 +23,44 @@
             <a href="./index.html">Home</a>
             <a href="./index.html">About This Site</a>
         </div>
+        <script>
+            //getComputerChoice
+            let rock = 0
+            let paper = 1
+            let scissors = 2
+
+            let getComputerChoice = () => {
+                let choice = Math.floor(Math.random() * 3);
+                return choice;
+            };
+
+            //get player choice and play a round
+
+            let playRound = () => {
+
+                let cpu = getComputerChoice();
+                let pChoice  = '5';
+
+                while (pChoice !== rock && pChoice !== paper && pChoice !== scissors) {
+                    pChoice = prompt('Rock, Paper, or Scissors?').toLowerCase();
+                    if (pChoice === "rock") {pChoice = rock}
+                    else if (pChoice === "paper") {pChoice = paper}
+                    else if (pChoice === "scissors") {pChoice = scissors}
+                }
+
+                console.log("Player chose ", pChoice);
+                console.log("CPU chose ", cpu);
+                
+                if (pChoice === cpu) {
+                    console.log("It's a tie!");
+                } else if (pChoice < cpu) {
+                    console.log("Cpu wins!");
+                } else if (pChoice > cpu) {
+                    console.log("Player wins!");
+                }
+            };
+
+            playRound();
+        </script>
     </body>
 </html>
